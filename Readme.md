@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Тимошин](https://up.htmlacademy.ru/htmlcss/37/user/2346199).
-* Наставник: [Андрей Волошко](https://htmlacademy.ru/profile/id1655583)
+* Наставник: [Андрей Волошко](https://htmlacademy.ru/profile/id1655583).
 
 ---
 
