@@ -5,6 +5,7 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -12,6 +13,7 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
@@ -19,18 +21,21 @@ body {
   line-height: 24px;
   background-color: #F2F2F2;
 }
+
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
 }
+
 .container {
   background-color: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -39,6 +44,7 @@ ol {
   margin-left: auto;
   margin-right: auto;
 }
+
 .page-header {
   position: relative;
   padding-left: calc(70px + 140px + 28px);
@@ -46,6 +52,7 @@ ol {
   align-items: center;
   padding-right: 70px;
 }
+
 .logo {
   position: absolute;
   width: 140px;
@@ -54,9 +61,11 @@ ol {
   left: 70px;
   display: block;
 }
+
 .navigation-list {
   display: flex;
 }
+
 .navigation-link {
   display: block;
   line-height: 62px;
@@ -66,34 +75,43 @@ ol {
   color: #000000;
   border-bottom: 2px solid transparent;
 }
+
 .navigation-link:hover {
   border-color: #756257;
 }
+
 .navigation-item {
   margin-right: 32px;
 }
+
 .navigation-item:last-child {
   margin-right: 0;
 }
+
 .extra {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
+
 .extra-icons {
   display: flex;
   margin-right: 20px;
 }
+
 .extra-icons-item {
   margin-right: 24px;
 }
+
 .extra-icons-item:last-child {
   margin-right: 0;
 }
+
 .icon-link {
   display: block;
   width: 22px;
 }
+
 .button-link {
   width: 160px;
   height: 36px;
@@ -104,21 +122,25 @@ ol {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 .hero {
   background-image: url("../img/background_hero.png");
   width: 1200px;
-height: 485px;
+  height: 485px;
 }
+
 .img-hero {
   width: 458px;
   height: 352px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .descript {
   width: 1200px;
   height: 261px;
 }
+
 .description {
   padding-top: 69px;
   font-weight: 700;
@@ -129,6 +151,7 @@ height: 485px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .reasons {
 
   font-style: normal;
@@ -137,8 +160,162 @@ height: 485px;
   line-height: 26px;
   text-align: center;
 }
-.advantages {}
 
-.advantages-list {
+.advantages-title-right {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
 
 }
+
+.advantages-title-left {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.advantages-description-right {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-description-left {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.servise-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.servise-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.servise-list-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.servise-list-card-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-catalog-button {
+  width: 376px;
+  height: 52px;
+  background: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 415px;
+  background-image: url(../img/Subscribe.png);
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe-button {
+  width: 232px;
+  height: 52px;
+  font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+border-radius: 0px 4px 4px 0px;
+}
+.page-footer{
+  display: flex;
+  align-items: center;
+  height: 120px;
+  justify-content:space-between;
+}
+.footer-social-list{
+  display: flex;
+margin-left: 70px;
+}
+.img-social{
+width: 20px;
+height: 16px;
+}
+.phone{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.phone:hover{
+  color: blue;
+}
+/* >.img-academy{ }*/
