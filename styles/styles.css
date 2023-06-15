@@ -20,7 +20,12 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: #F2F2F2;
+  height: 100%;
 }
+main{
+  flex-grow: 1;
+}
+
 
 .visually-hidden {
   position: fixed;
@@ -41,6 +46,9 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+ min-height:100%;
+ display: flex;
+ flex-direction: column;
 }
 
 .page-header {
@@ -99,6 +107,9 @@ body {
 .extra-icons {
   display: flex;
   margin-right: 20px;
+  list-style: none;
+
+
 }
 
 .extra-icons-item {
@@ -450,6 +461,11 @@ body {
   color: #FFFFFF;
 }
 
+.catalog-filter{
+display: flex;
+
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -488,6 +504,10 @@ body {
   line-height: 20px;
 }
 
+.catalog-sorting{
+  display: flex;
+}
+
 .catalog-sorting-subtitle {
   font-weight: 700;
   font-size: 30px;
@@ -513,6 +533,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .card-item-title {
