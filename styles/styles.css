@@ -186,7 +186,6 @@ body {
 }
 
 .reasons {
-
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -194,6 +193,16 @@ body {
   text-align: center;
 }
 
+.advantages-item-conteiner {
+  width: 230px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 90px 85px;
+
+}
 
 .advantages-first {
   display: flex;
@@ -205,8 +214,15 @@ body {
 .advantages-item-first {
   background: #82B3D3;
   width: 400px;
-  display: block;
-  align-items: auto;
+  margin: 102px 85x 102px 85px;
+
+}
+
+.advantages-item-photo-first {
+  background-image: url("../img/house_and_rock.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advantages-title-first {
@@ -234,9 +250,11 @@ body {
 .advantages-list-item {
   width: 400px;
   min-height: 385px;
-  background: rgba(131, 179, 211, 0.12);ground: rgba(131, 179, 211, 0.12);
+  background: rgba(131, 179, 211, 0.12);
+  ground: rgba(131, 179, 211, 0.12);
 }
-.advantages-list-item:nth-child(2){
+
+.advantages-list-item:nth-child(2) {
   background: rgba(131, 179, 211, 0.2);
 }
 
@@ -254,6 +272,13 @@ body {
   flex-direction: row-reverse;
 }
 
+.advantages-item-photo-last {
+  background-image: url("../img/the_devil's_bridge.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .advantages-item-last {
   background: #82B3D3;
   width: 400px;
@@ -265,7 +290,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 102px 85x 102px 85px;
+
 }
 
 
@@ -347,6 +372,10 @@ body {
   text-align: center;
 }
 
+.search {
+  padding: 96px 304px;
+}
+
 .search-title {
   font-weight: 700;
   font-size: 30px;
@@ -359,6 +388,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .search-catalog {
@@ -446,15 +476,17 @@ body {
 .footer-social-list {
   display: flex;
   justify-content: space-between;
-  margin-left: 70px;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 70px;
 }
 
 .img-social {
   width: 20px;
   height: 16px;
+  margin: 12px;
 }
 
 .phone {
@@ -471,7 +503,10 @@ body {
   color: blue;
 }
 
-/* >.img-academy{ }*/
+
+.academy {
+  margin-right: 70px;
+}
 
 /* ниже стилизация catalog.html  */
 
@@ -505,11 +540,7 @@ body {
   color: #FFFFFF;
 }
 
-.catalog-filter{
-  display: flex;
-
-
-}
+.catalog-filter {}
 
 .catalog-filter-title {
   font-weight: 700;
@@ -613,14 +644,15 @@ body {
 
 .pagination {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   column-gap: 8px;
   align-items: center;
   width: 1060px;
   height: 60px;
   list-style: none;
-  margin: 0;
+  margin: 40px 70px 60px 70px;
   padding: 0;
+list-style-type: none;
 }
 
 
