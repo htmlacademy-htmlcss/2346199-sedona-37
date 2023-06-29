@@ -193,6 +193,17 @@ body {
   text-align: center;
 }
 
+.advantages-first {
+  display: flex;
+  color: #FFFFFF;
+}
+
+.advantages-item-first {
+  background: #82B3D3;
+  width: 400px;
+  margin: 102px 85x 102px 85px;
+}
+
 .advantages-item-conteiner {
   width: 230px;
   min-height: 200px;
@@ -201,24 +212,9 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   padding: 90px 85px;
-
 }
 
-.advantages-first {
-  display: flex;
-  color: #FFFFFF;
-}
-
-
-
-.advantages-item-first {
-  background: #82B3D3;
-  width: 400px;
-  margin: 102px 85x 102px 85px;
-
-}
-
-.advantages-item-photo-first {
+.advantages-photo-first {
   background-image: url("../img/house_and_rock.jpg");
   width: 100%;
   background-repeat: no-repeat;
@@ -251,7 +247,7 @@ body {
   width: 400px;
   min-height: 385px;
   background: rgba(131, 179, 211, 0.12);
-  ground: rgba(131, 179, 211, 0.12);
+
 }
 
 .advantages-list-item:nth-child(2) {
@@ -264,6 +260,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .advantages-last {
@@ -272,12 +269,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.advantages-item-photo-last {
-  background-image: url("../img/the_devil's_bridge.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .advantages-item-last {
   background: #82B3D3;
@@ -315,8 +307,22 @@ body {
   border: none;
 }
 
-.servise-list-card {
+.advantages-photo-last {
+  background-image: url("../img/the_devil's_bridge.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servise-title {
+  margin: 0 300px;
+}
+
+.servise-list {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -343,12 +349,17 @@ body {
 
 }
 
-.service-item-card {
-
+.service-item {
   width: 400px;
   min-height: 385px;
   background: rgba(131, 179, 211, 0.12);
+
 }
+
+.service-item:nth-child(2) {
+  background: none;
+}
+
 
 .servise-description {
   font-size: 22px;
@@ -358,7 +369,17 @@ body {
   margin-bottom: 64px;
 }
 
-.servise-list-card-title {
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item-container {
+  max-width: 230px;
+}
+
+.servise-list-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -366,9 +387,10 @@ body {
   text-transform: uppercase;
 }
 
-.servise-list-card-description {
+.servise-list-description {
   font-size: 18px;
   line-height: 21px;
+
   text-align: center;
 }
 
@@ -389,11 +411,14 @@ body {
   line-height: 26px;
   text-align: center;
   margin-bottom: 54px;
+  color: var(--texts-second, #333);
 }
 
+
 .search-catalog {
-  display: block;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 376px;
   height: 52px;
   background: #756157;
@@ -405,7 +430,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 8px;
+  padding: 0 50px;
   margin-left: auto;
   margin-right: auto;
 
@@ -424,18 +449,22 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  padding-top: 96px;
 }
+
 
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
+  padding-top: 54px;
 }
 
 .subscribe-input {
@@ -447,7 +476,7 @@ body {
   line-height: 24px;
   align-items: center;
   padding-left: 20px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
 }
 
@@ -517,8 +546,10 @@ body {
 
 .inner_header {
   background-image: url("../img/background-catalog.png");
-  background-repeat: no-repeat;
-
+  background-size:cover;
+  padding-top: 35px;
+  padding-left: 70px;
+  min-height: 412px;
 }
 
 .inner-header-title {
@@ -526,13 +557,16 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
+  max-width: 114px;
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 946px 40px 0;
 }
 
 .breadcrumbs-link {
@@ -540,7 +574,15 @@ body {
   color: #FFFFFF;
 }
 
-.catalog-filter {}
+
+.catalog-filter-form {
+  display: flex;
+}
+
+.catalog-filter-group {
+  padding: 0;
+
+}
 
 .catalog-filter-title {
   font-weight: 700;
@@ -559,6 +601,11 @@ body {
   line-height: 23px;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .button-apply {
   width: 191px;
   height: 36px;
@@ -570,6 +617,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+
 }
 
 .button-reset {
@@ -578,10 +627,21 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+
 }
 
 .catalog-sorting {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
 }
 
 .catalog-sorting-subtitle {
@@ -590,56 +650,155 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 40px auto 40px 70px;
 }
 
 .select-control {
 
   width: 292px;
   height: 49px;
+  font-family: "PT Sans", sans-serif;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-right: 70px;
+  background: none;
+  padding: 0 20px;
 }
 
-.hotels-card {}
+.catalog-sorting-views {
+  list-style: none;
+  display: flex;
+}
 
-.hotels-card-list {
+.view {
+  display: block;
+  padding: 14px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+
+}
+
+.view:hover {
+  border-radius: 4px;
+  border: 2px solid var(--icons-basic, #000)
+}
+
+view:nth-child(3) {
+  margin-right: 70px;
+}
+
+
+.hotels{
+  padding-left: 70px;
+}
+.hotels-list {
+
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap:20px;
 
 }
 
-.card-item-title {
+.hotels-item {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap:16px 20px;
+
+}
+.hotel-image{
+
+
+  grid-column: 2 span;
+}
+.hotel-title {
+  display: grid;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000;
+  text-decoration: none;
+  grid-column: 2 span;
+  margin: 0;
+
 }
 
-.hotels-card-type {
+.hotels-type {
   font-size: 18px;
   line-height: 21px;
+  color: var(--texts-second, #333);
 }
 
-.hotels-card-price {
+.hotels-price {
   font-size: 18px;
   line-height: 21px;
+  color: var(--texts-second, #333);
   text-align: right;
+}
+
+.hotels-button {
+  width: 140px;
+  height: 36px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: PT Sans;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--texts-background-deafault, #FFF);
+  text-align: center;
+  border-radius: 4px;
+  background: var(--buttons-basic, #756157);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.favorites-button {
+  width: 140px;
+  height: 36px;
+  border-radius: 4px;
+  background: var(--buttons-second, #82B3D3);
+  border: none;
+  color: var(--texts-background-deafault, #FFF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: PT Sans;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.stars {
+  display: block;
+  width: 140px;
+  height: 37px;
 }
 
 .rate {
   width: 140px;
   height: 37px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   background: #F2F2F2;
   border-radius: 4px;
+  margin: 0;
 }
 
 .pagination {
@@ -675,7 +834,8 @@ body {
   background: #F2F2F2;
   color: #000000;
 }
-.subscribe-title-catalog{
+
+.subscribe-title-catalog {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
@@ -683,7 +843,8 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.subscribe-description-catalog{
+
+.subscribe-description-catalog {
   color: #000000;
   font-size: 22px;
   line-height: 26px;
