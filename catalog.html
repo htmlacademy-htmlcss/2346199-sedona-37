@@ -37,6 +37,7 @@
             <li class="extra-icons-item">
               <a class="icon-link" href="#" title="Избранное">
                 <img class="img" src="img/heart.png" width="22" height="22" alt="Избранное">
+                <span class="icon-link-badge">15</span>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -50,12 +51,10 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <div class="breadcrumbs">
               <div class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"><img class="img breadcrumbs-link-icon"
-                    style="height: 12px; width: 12px;" src="img/catalog-breadcrum/catalog_breadcrum.svg"
-                    alt="На главную"></a>
+                <a class="breadcrumbs-home" title="На главную" href="index.html"></a>
               </div>
               <div class="breadcrumbs-item">
-                <img style="width: 6px; height: 10px;" class="img" src="img/catalog-breadcrum/Vector.svg">
+                <span  class="breadcrumbs-arrow"></span>
               </div>
               <div class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -113,12 +112,16 @@
               </fieldset>
               <fieldset class="catalog-filter-prise">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="prise">
-                  <input type="number" name="min-prise" value="0">
+               <div class="prices">
+                <label class="price">
+                  <input class="input-price" type="number" name="min-prise" value="0">
+               <span class="input-price-label">от</span>
                 </label>
-                <label class="prise">
-                  <input type="number" name="max-prise" value="9000">
+                <label class="price">
+                  <input class="input-price" type="number" name="max-prise" value="9000">
+               <span class="input-price-label">до</span>
                 </label>
+               </div>
               </fieldset>
               <div class="catalog-filter-buttons">
               <button class="button-apply" type="submit">Применить
@@ -140,9 +143,9 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <ul class="catalog-sorting-views">
-            <li class="view"><img class="img" style="width: 16; height: 14;" src="img/views/View-icon-1.png"></li>
-            <li class="view"><img class="img" style="width: 16; height: 14;" src="img/views/View-icon-2.png"></li>
-            <li class="view"><img class="img" style="width: 16; height: 14;" src="img/views/View-icon-3.png"></li>
+            <li class="view"><img class="img" src="img/views/View-icon-1.png"></li>
+            <li class="view"><img class="img" src="img/views/View-icon-2.png"></li>
+            <li class="view"><img class="img" src="img/views/View-icon-3.png"></li>
             </ul>
         </section>
         <section class="hotels">
@@ -202,6 +205,7 @@
               <p class="rate">Рейтинг: 5,0</p>
             </li>
           </ul>
+          <hr class="hotel-divider" />
           <ul class="pagination">
 
             <li class="pagination-item">
@@ -226,8 +230,8 @@
         </section>
 
         <section class="subscribe-catalog">
-          <h3 class="subscribe-title-catalog">Подпишитесь на рассылку</h3>
-          <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h3 class="heading">Подпишитесь на рассылку</h3>
+          <p class="descriptions">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-input" type="text" name="mail" id="mail-field" placeholder="Ваш e-mail">
             <button class="subscribe-button" type="submit">Подписаться</button>
