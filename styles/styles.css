@@ -64,7 +64,6 @@ body {
 
 .page-header {
   position: relative;
-
   display: flex;
   align-items: center;
   padding-right: 70px;
@@ -85,7 +84,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 238px;
+  margin-left: 244px;
 }
 
 .navigation-link {
@@ -195,7 +194,7 @@ body {
   padding-top: 51px;
 }
 
-.descript {
+.advantages-descript {
   width: 1200px;
   min-height: 261px;
   margin-bottom: 21px;
@@ -238,7 +237,7 @@ body {
 
 .advantage-conteiner {
   width: 230px;
-  min-height: 200px;
+  min-height: 181px;
   display: flex;
   flex-direction: column;
   margin-top: auto;
@@ -315,6 +314,12 @@ body {
   padding: 0;
 }
 
+.service-item--housing {
+  display: block;
+  background-image: url("../img/service-item-card_svg/hause.svg");
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
 
 .img-service {
   width: auto;
@@ -328,7 +333,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+.service-heading {
   margin-top: 64px;
 }
 
@@ -473,7 +481,7 @@ body {
   background-color: #68A2CA;
 }
 
-.subscribe-button:active{
+.subscribe-button:active {
   background-color: #82B3D3;
 }
 
@@ -567,7 +575,7 @@ body {
   background-image: url(../img/catalog-breadcrum/Vector.svg);
 }
 
-.breadcrumbs-link {
+.breadcrumbs-finish {
   line-height: 21px;
   color: #FFFFFF;
 }
@@ -605,6 +613,16 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.control-input[type="checkbox"] {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
 }
 
 .catalog-filter-item {
@@ -677,17 +695,19 @@ body {
   margin-top: 56px;
   margin-bottom: 32px;
 }
+
 .button-apply:hover {
   background-color: #68A2CA;
 }
 
-.button-apply:active{
+.button-apply:active {
   background-color: #82B3D3;
 }
 
 .button-apply:hover {
   background-color: #68A2CA;
 }
+
 .button-reset {
   width: 191px;
   height: 36px;
@@ -701,15 +721,15 @@ body {
   border: none;
   font-family: "PT Sans", sans-serif;
 }
-.button-reset:hover{
 
-}
-.button-reset:active{
+.button-reset:hover {}
 
-}
-.button-reset:focus{
+.button-reset:active {}
+
+.button-reset:focus {
   border: 3px solid #83B3D3;
 }
+
 .catalog-sorting {
   display: flex;
   align-items: center;
