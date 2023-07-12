@@ -9,7 +9,7 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
           <img class="img" src="img/logo-Sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
@@ -45,7 +45,7 @@
           <button class="button-link" type="button">Хочу сюда!</button>
         </div>
       </header>
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <section class="inner_header">
           <div class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -57,11 +57,11 @@
                 <span  class="breadcrumbs-arrow"></span>
               </div>
               <div class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <span class="breadcrumbs-finish">Гостиницы</span>
               </div>
             </div>
           </div>
-          <div class="catalog-filter">
+          <div class="catalog-filter" data-test="filter">
             <h2 class="visually-hidden">Список гостиниц </h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -148,7 +148,7 @@
             <li class="view"><img class="img" src="img/views/View-icon-3.png"></li>
             </ul>
         </section>
-        <section class="hotels">
+        <section class="hotels" data-test="hotels">
           <ul class="hotels-list">
             <li class="hotels-item">
               <img class="hotel-image" src="img/hotels/Amara_Resort_&_Spa.jpg" width="300" height="212" alt="">
@@ -229,7 +229,7 @@
           </ul>
         </section>
 
-        <section class="subscribe-catalog">
+        <section class="subscribe-catalog" data-test="subscribe">
           <h3 class="heading">Подпишитесь на рассылку</h3>
           <p class="descriptions">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -239,7 +239,7 @@
         </section>
 
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <span class="visually-hidden">Вконтакте</span>
