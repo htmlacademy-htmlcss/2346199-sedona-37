@@ -221,6 +221,89 @@
               fill="black" />
           </svg></a>
       </footer>
+      <div class="modal-container">
+        <div class="modal-window">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" method="post">
+              <div class="modal-row">
+                <div class="modal-date">
+                  <label class="modal-label" for="date-from">Дата заезда:</label>
+                  <div class="date-input">
+                    <input id="date-from" class="input" type="text" value="27 апреля 2020" placeholder="Укажите дату" />
+                    <span class="date-input-icon"></span>
+                    <span class="date-input-message date-input-message-error">Мы не можем отправить вас в
+                      прошлое.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-row">
+                <div class="modal-date">
+                  <label class="modal-label" for="date-to">Дата выезда:</label>
+                  <div class="date-input">
+                    <input id="date-to" class="input" type="text" value="1 сентября 2023" placeholder="Укажите дату" />
+                    <span class="date-input-icon"></span>
+                    <span class="date-input-message">На эти даты есть свободные номера. Пока есть.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-row">
+                <div class="modal-peoples">
+                  <div class="modal-peoples-count">
+                    <div class="modal-peoples-count-label">
+                      <label class="modal-label" for="peoples-adult">Взрослые:</label>
+                    </div>
+                    <div class="modal-peoples-count-input">
+                      <div class="input-counter">
+                        <input id="peoples-adult" class="input" type="text" value="2" placeholder="Укажите дату" />
+                        <button class="input-counter-button input-counter-button-min" type="button"></button>
+                        <button class="input-counter-button input-counter-button-max" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-peoples-count">
+                    <div class="modal-peoples-count-label modal-peoples-count-info">
+                      <label class="modal-label" for="peoples-kids">Дети:</label>
+                      <div class="tooltip">
+                        <div class="tooltip-info">
+                          <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                              fill="none">
+                              <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                              <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="tooltip-popup">
+                          Укажите количество детей, которые будут с вами,
+                          возраст которых от 6 до 18 лет. Дети до 6 лет
+                          размещаются бесплатно.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-peoples-count-input">
+                      <div class="input-counter">
+                        <input id="peoples-kids" class="input" type="text" value="2" placeholder="Укажите дату" />
+                        <button class="input-counter-button input-counter-button-min" type="button"></button>
+                        <button class="input-counter-button input-counter-button-max" type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-row">
+                <button class="button button-blue button-big" type="submit">
+                  Найти
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
