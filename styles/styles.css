@@ -39,7 +39,6 @@ body {
 }
 
 .img {
-
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -163,6 +162,7 @@ body {
 }
 
 .hero {
+  background-color: navy;
   background-image: url("../img/background_hero.png");
   width: 100%;
   min-height: 485px;
@@ -244,6 +244,7 @@ body {
 }
 
 .advantage-photo {
+  background-color: #82B3D3;
   background-image: url("../img/house_and_rock.jpg");
   width: 100%;
   background-repeat: no-repeat;
@@ -251,6 +252,7 @@ body {
 }
 
 .advantage--last .advantage-photo {
+  background-color:#82B3D3;
   background-image: url("../img/the_devil's_bridge.jpg");
 }
 
@@ -416,7 +418,8 @@ body {
 .subscribe {
   width: 1200px;
   min-height: 415px;
-  background-image: url(../img/Subscribe.png);
+  background-color: #82B3D3;
+  background-image: url(../img/subscribe.png);
 }
 
 .subscribe .heading {
@@ -535,6 +538,7 @@ body {
 }
 
 .inner_header {
+  background-color: #82B3D3;
   background-image: url("../img/background-catalog.png");
   background-size: cover;
   padding-left: 70px;
@@ -852,15 +856,15 @@ body {
 }
 
 .view-cards {
-  background-image: url('../img/views/View-icon-1.png');
+  background-image: url('../img/views/view-icon-1.png');
 }
 
 .view-full {
-  background-image: url('../img/views/View-icon-2.png');
+  background-image: url('../img/views/view-icon-2.png');
 }
 
 .view-list {
-  background-image: url('../img/views/View-icon-3.png');
+  background-image: url('../img/views/view-icon-3.png');
 }
 
 .hotels-list {
@@ -991,6 +995,10 @@ body {
   background: #82B3D3;
   border-radius: 4px;
   cursor: pointer;
+}
+.pagination-item:nth-of-type(5) .pagination-link{
+  background:none;
+  color: black;
 }
 
 .pagination-link:hover,
@@ -1167,7 +1175,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.80);
   box-sizing: border-box;
 }
 
@@ -1193,7 +1201,7 @@ body {
   right: 52px;
   border: none;
   background-color: #F2F2F2;
-  background-image: url(../img/modal/Vector.svg);
+  background-image: url(../img/modal/vector.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1385,7 +1393,7 @@ body {
 }
 .tooltip-toggle{
   border: none;
-  background-color: white;
+  background-color: transparent;
   cursor: help;
 }
 .tooltip-popup {
